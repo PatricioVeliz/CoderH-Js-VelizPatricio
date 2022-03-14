@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Conversor de Pesos a otras monedas</title>
+</head>
+<body>
+    <h1>Coversor</h1>
+    <form action="formulario" class="form">
+        <p>Seleccionar: </p>
+        <input type="radio" name="cambio" id="dolar">Dolar($)
+        <input type="radio" name="cambio" id="yene">Yenes (¥)
+        <input type="radio" name="cambio" id="euro">Euro(£)
+
+
+        <p>Ingrese Pesitos: </p>
+        <input type="number" id="valor" min="1" max="999999999">
+        <input type="button" value="Cambiar" id="transformar" onclick="convertir()">
+        
+    </form>
+
+    <h1 id="resultado">resultado: </h1>
+
+    <script src="./js/Conversor.js"></script>
+</body>
+</html>
