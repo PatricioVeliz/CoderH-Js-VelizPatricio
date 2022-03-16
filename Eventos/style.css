@@ -14,3 +14,19 @@ h1{
     color: red;
     text-align: center;
 }
+
+.caja{
+
+    border: red solid 2px;
+    width: 50%;
+    margin: auto;
+
+}
+
+
+.caja.modificado{
+    
+   background-color: yellow;
+    width: 50%;
+    margin: auto;
+}

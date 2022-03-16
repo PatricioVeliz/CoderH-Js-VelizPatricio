@@ -19,4 +19,22 @@ function convertir() {
     else{
         alert("Usted no eligio ninguna moneda.");
     }
+
+
 }
+    var btn = document.getElementById('transformar');
+    var caja = document.getElementById('caja');
+    var contador = 0;
+
+    function cambiar(){
+        if(contador==0){
+            caja.classList.add('modificado');
+            contador=1;
+        }
+        else{
+            caja.classList.remove('modificado');
+            contador=0;
+        }
+    }
+
+    btn.addEventListener('click',cambiar,true)
